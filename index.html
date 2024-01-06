@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Remix icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css"
+      integrity="sha512-dTsohxprpcruDm4sjU92K0/Gf1nTKVVskNHLOGMqxmokBSkfOAyCzYSB6+5Z9UlDafFRpy5xLhvpkOImeFbX6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Weather App by Alexander Rostyagai</title>
+  </head>
+  <body>
+    <main>
+      <section class="weather-section">
+        <div class="weather-section__card">
+          <div class="weather-section__search-box">
+            <i class="weather-section__search-box-icon ri-map-pin-fill"></i>
+            <input
+              class="weather-section__input"
+              id="search-box-input"
+              type="text"
+              placeholder="Enter your location"
+            />
+            <button class="weather-section__search-button ri-search-line" type="button"></button>
+          </div>
+          <div class="weather-section__weather-box">
+            <div class="weather-section__weather-container">
+              <div class="weather-section__weather-info">
+                <div class="weather-section__weather">
+                  <img
+                    class="weather-section__weather-img"
+                    id="weather-image"
+                    src="./images/cloud.png"
+                    alt="weather-icon"
+                  />
+                  <p class="weather-section__weather-temperature" id="temperature">
+                    0<span>&deg;C</span>
+                  </p>
+                  <p class="weather-section__weather-descr" id="descr">Broken Clouds</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="weather-section__weather-details">
+            <div class="weather-section__weather-humidity">
+              <i class="ri-water-percent-line"></i>
+              <div class="weather-section__weather-text">
+                <div class="weather-section__weather-info-humid">
+                  <span id="humidity">0%</span>
+                </div>
+                <p>Humidity</p>
+              </div>
+            </div>
+
+            <div class="weather-section__weather-wind">
+              <i class="ri-windy-line"></i>
+              <div class="weather-section__weather-text">
+                <div class="weather-section__weather-info-wind">
+                  <span id="wind">0Km/h</span>
+                </div>
+                <p>Wind speed</p>
+              </div>
+            </div>
+          </div>
+          <div class="weather-section__not-found">
+            <div class="weather-section__not-found-box">
+              <img src="./images/404.png" alt="Not found" />
+              <p>Oops! Location not found!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
