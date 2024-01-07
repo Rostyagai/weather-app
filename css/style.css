@@ -8,26 +8,33 @@
 }
 body {
   background-color: black;
-  max-height: 100vh;
-}
-html {
-  overscroll-behavior: none;
-}
 
+}
+#canv{
+  width: 200%;
+  position: absolute;
+  height: 100vh;
+}
 .weather-section {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("../images/aaabstract.jfif");
-  background-size: cover;
-  background-position: center;
+  /* background: url("../images/aaabstract.jpg"); */
+  /* background-size: cover; */
+  /* background-position: center; */
+}
+@media screen and (max-width: 500px) {
+.weather-section{
+  align-items: start;
+  padding-top: 1rem;
+}
 }
 .weather-section__card {
   position: relative;
   width: 400px;
   height: 100px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0 , 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(32px);
   border-radius: 1rem;
