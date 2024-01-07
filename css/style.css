@@ -8,9 +8,8 @@
 }
 body {
   background-color: black;
-
 }
-#canv{
+#canv {
   width: 200%;
   position: absolute;
   height: 100vh;
@@ -25,16 +24,16 @@ body {
   /* background-position: center; */
 }
 @media screen and (max-width: 500px) {
-.weather-section{
-  align-items: start;
-  padding-top: 1rem;
-}
+  .weather-section {
+    align-items: start;
+    padding-top: 2rem;
+  }
 }
 .weather-section__card {
   position: relative;
   width: 400px;
   height: 100px;
-  background: rgba(0, 0, 0 , 0.5);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(32px);
   border-radius: 1rem;
@@ -160,6 +159,23 @@ body {
   transition-delay: 0.3s;
   overflow: hidden;
 }
+@media screen and (max-width: 500px) {
+  .weather-section__weather-humidity,
+  .weather-section__weather-wind {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 6px;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+    transition-delay: 0.3s;
+    overflow: hidden;
+  }
+  .weather-section__weather-humidity {
+  padding-left: 15px;
+  justify-content: flex-start;
+}
+}
 
 .weather-section__weather-details.active .weather-section__weather-wind,
 .weather-section__weather-details.active .weather-section__weather-humidity {
@@ -168,6 +184,12 @@ body {
 .weather-section__weather-humidity {
   padding-left: 20px;
   justify-content: flex-start;
+}
+@media screen and (max-width: 500px) {
+  .weather-section__weather-humidity {
+  padding-left: 16px;
+  justify-content: flex-start;
+}
 }
 
 .weather-section__weather-details i {
